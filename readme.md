@@ -108,3 +108,75 @@ console.log(TAHUN)
 ```
 
 > Catatan : Const ini di peruntukan jika data nya tidak akan pernah di ubah ubah jika data nya di tengah program di ubah maka akan menghasilkan error, serta penulisan variabel Const itu biasanya menggunakan huruf besar sebagai penanda bahwa variabel ini merupakan variabel constanta.
+
+## TIPE DATA
+Tipe data dalam pemograman merupakan tipe dari values sebuah nilai. <br>
+kita bisa mengecek tipe data menggunakan typeof(typeof merupakan sebuah fitur di javascript agar bisa mengecek tipe data yang di gunakan itu tipe data apa)
+### Tipe Data dalam javascript ada 4
+1. String
+2. Number
+3. Boolean
+4. Undifined
+
+#### String
+Tipe data String merupakan tipe data huruf, bisa berbentuk apapun selama ada kutip("")
+
+#### Contoh penggunaan
+```js
+let string = "Ini adalah string" //ini adalah tipe data string yaitu huruf dengan tanda quotes di atas
+console.log(typeof string)
+```
+
+#### Hasil
+```
+string
+```
+> Catatan : Dalam javascript jika ingin membuat string wajib menggunakan kutip
+
+#### Number
+Tipe data number merupakan tipe data yang berisi kumpulan kumpulan angka
+
+#### Contoh penggunaan
+```js
+let number = 99 // ini adalah tipe data number yaitu tipe data untuk angka
+console.log(typeof number)
+```
+
+#### Hasil
+```
+number
+```
+
+> Catatan : Dalam javascript membuat tipe data number tidak boleh menggunakan kutip karna jika memakai kutip akan di anggap sebagai string
+
+#### Boolean
+Tipe data boolean merupakan tipe data yang berisi hanya 2 nilai yaitu true or false biasanya operasi ini di gunakan dalam perkondisian, pengulangan
+
+#### Cara Penggunaan
+```js
+let boolean = true // ini adalah tipe data boolean dimana hanya terdapat 2 nilai saja yaitu true dan false
+console.log(typeof boolean)
+```
+
+#### Hasil
+```
+boolean
+```
+
+> Catatan : Tipe data boolean hanya bisa di isi true or false saja 
+
+#### Undefined
+Tipe data undifined merupakan tipe data yang tidak memiliki isi tetapi tetap ada sebagai penanda bahwa variabel tersebut tidak mempunyai data apapun di dalamnya
+
+#### Cara Penggunaan
+```js
+let undefineds; //ini adalah tipe data undifined dimana artinya variabel tersebut belum mempunyai values atau nilai
+console.log(typeof undefineds)
+```
+
+#### Hasil
+```
+undefined
+```
+
+> Catatan : tipe data undefined bisa sebagai penanda jika di dalamnya tidak terdapat apa apa serta tipe data undifined berbeda dengan tipe data null
