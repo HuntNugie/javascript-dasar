@@ -413,6 +413,168 @@ console.log(a)
 ```
 > Catatan : Untuk assigment ini akan memasukkan nilai akhirnya ke dalam variabel yang ada di sebelah kiri
 
+## Operasi Perbandingan
+Operasi perbandingan adalah operasi yang membandingkan antara 2 nilai dan akan menghasilkan tipe data boolean true atau false
 
+**Daftar operasi perbandingan**
+ <table border="1" cellspacing="0" cellpadding="6" style="text-align:center; border-collapse:collapse;">
+        <thead>
+            <tr>
+                <th>Operasi</th>
+                <th>Simbol</th>
+                <th>Fungsi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sama dengan(Pembanding)</td>
+                <td>==</td>
+                <td>Berfungsi untuk membandingkan antar dua nilai apakah memiliki nilai yang sama</td>
+            </tr>
+            <tr>
+                <td>Tidak sama dengan</td>
+                <td>!=</td>
+                <td>Berfungsi untuk membandingkan antar dua nilai apakah nilai nya tidak sama</td>
+            </tr>
+            <tr>
+                <td>Sama dengan strict</td>
+                <td>===</td>
+                <td>Berfungsi untuk membandingkan antar dua nilai apakah nilai nya sama namun di bandingkan juga dengan tipe datanya</td>
+            </tr>
+            <tr>
+                <td>Tidak sama dengan strict</td>
+                <td>!==</td>
+                <td>Berfungsi untuk membandingkan antar dua nilai apakah nilai nya tidak sama namun di bandingkan juga dengan tipe datanya</td>
+            </tr>
+            <tr>
+                <td>Lebih besar dari</td>
+                <td>></td>
+                <td>Berfungsi untuk membandingkan antar dua nilai apakah nilai yang ada di sebelah kiri lebih besar dari nilai yang ada di sebelah kanan</td>
+            </tr>
+            <tr>
+                <td>Lebih kecil dari</td>
+                <td><</td>
+                <td>Berfungsi untuk membandingkan antar dua nilai apakah nilai yang ada di sebelah kiri itu lebih kecil dari nilai yang ada di sebalah kanan </td>
+            </tr>
+            <tr>
+                <td>Lebih besar atau sama dengan</td>
+                <td>>=</td>
+                <td>Berfungsi untuk membandingkan antar dua nilai apakah nilai yang ada di sebelah kiri itu lebih besar atau sama dengan nilai yang ada di sebalah kanan </td>
+            </tr>
+            <tr>
+                <td>Lebih kecil atau sama dengan</td>
+                <td><=</td>
+                <td>Berfungsi untuk membandingkan antar dua nilai apakah nilai yang ada di sebelah kiri itu lebih kecil atau sama dengan nilai yang ada di sebelah kanan</td>
+            </tr>
+        </tbody>
+    </table>
+
+### Sama dengan (Pembanding)
+Sama dengan(Pembanding) merupakan salah satu operator pembanding dimana membandingkan antar 2 nilai apakah memiliki nilai yang sama dan sama dengan ini berbeda dengan sama dengan di operator assigment
+
+#### Cara penggunaan
+```js
+let a = 5
+let b = 5
+
+console.log(a==b)
+```
+
+#### Hasil
+```console
+true
+```
+
+> Catatan : Hati hati jika menggunakan ini maka akan membandingkan bahkan jika angka tersebut adalah sebuah string akan menghasilkan true, dan operator sama dengan(pemabanding) akan menghasilkan true jika kedua nilai memiliki nilai yang sama
+
+### Tidak sama dengan
+Tidak sama dengan merupakan salah satu operator pembanding dimana membandingkan antar 2 nilai apakah memiliki nilai yang tidak sama.
+
+#### Cara Penggunaan
+```js
+let a=5
+let b=5
+
+console.log(a!=b)
+```
+
+#### Hasil
+```console
+false
+```
+
+> Catatan : sama dengan sama dengan hati hati jika menggunakan ini akan membandingkan bahkan jika angka tersebut sebuah string akan tetap di bandingkan, dan operator tidak sama dengan akan menghasilkan true jika kedua nilai nya tidak sama
+
+### Sama dengan Strict
+Sama dengan Strict merupakan salah satu operator pembanding dimana membandingkan antar 2 nilai apakah memiliki nilai yang sama serta akan membandingkan tipe data nya juga
+
+#### Cara penggunaan
+```js
+let a = 5
+let b = 5
+
+console.log(a===b)
+```
+
+#### Hasil
+```console
+true
+```
+
+> Catatan : operator sama dengan Strict akan menghasilkan true jika kedua nilai memiliki nilai yang sama serta jika tipe datanya pun sama juga
+
+### Tidak sama dengan strict
+Tidak sama dengan strict merupakan salah satu operator pembanding dimana membandingkan antar 2 nilai apakah memiliki nilai yang tidak sama dan akan membandingkan tipe datanya juga
+
+#### Cara Penggunaan
+```js
+let a=5
+let b=5
+
+console.log(a!==b)
+```
+
+#### Hasil
+```console
+false
+```
+
+> Catatan : operator tidak sama dengan akan menghasilkan true jika kedua nilai nya tidak sama serta jika tipe data nya pun sama juga
+
+### Lebih besar dari
+Lebih besar dari merupakan salah satu operator pembanding dimana membandingkan antar 2 nilai apakah Nilai yang ada di sebelah kiri lebih besar dari nilai yang ada di sebelah kanan
+
+#### Cara Penggunaan
+```js
+let a=5
+let b=5
+
+console.log(a>b)
+```
+
+#### Hasil
+```console
+false
+```
+
+> Catatan : Operator lebih besar dari akan menghasilkan true jika nilai yang ada di sebelah kirinya lebih besar dari nilai yang ada di sebelah kanan
+
+### Lebih kecil dari
+Lebih kecil dari merupakan salah satu operator pembanding dimana membandingkan antar 2 nilai apakah Nilai yang ada di sebelah kiri lebih kecil dari nilai yang ada di sebelah kanan
+
+#### Cara Penggunaan
+```js
+let a=4
+let b=5
+
+console.log(a<b)
+```
+
+#### Hasil
+```console
+true
+```
+
+> Catatan : Operator lebih kecil dari akan menghasilkan true jika nilai yang ada di sebelah kirinya lebih kecil dari nilai yang ada di sebelah kanan
 
 
