@@ -577,4 +577,40 @@ true
 
 > Catatan : Operator lebih kecil dari akan menghasilkan true jika nilai yang ada di sebelah kirinya lebih kecil dari nilai yang ada di sebelah kanan
 
+### Lebih kecil dari atau sama dengan
+Lebih kecil dari atau sama dengan merupakan salah satu operator pembanding dimana membandingkan antar 2 nilai apakah Nilai yang ada di sebelah kiri lebih kecil dari atau sama dengan nilai yang ada di sebelah kanan
+
+#### Cara Penggunaan
+```js
+let a=4
+let b=5
+
+console.log(a<=b)
+```
+
+#### Hasil
+```console
+true
+```
+
+> Catatan : Operator lebih kecil dari akan menghasilkan true jika nilai yang ada di sebelah kirinya lebih kecil dari atau sama dengan nilai yang ada di sebelah kanan
+
+### Lebih besar dari atau sama dengan
+Lebih besar dari atau sama dengan merupakan salah satu operator pembanding dimana membandingkan antar 2 nilai apakah Nilai yang ada di sebelah kiri lebih besar dari atau sama dengan nilai yang ada di sebelah kanan
+
+#### Cara Penggunaan
+```js
+let a=4
+let b=5
+
+console.log(a>=b)
+```
+
+#### Hasil
+```console
+false
+```
+
+> Catatan : Operator lebih besar dari akan menghasilkan true jika nilai yang ada di sebelah kirinya lebih besar dari atau sama dengan nilai yang ada di sebelah kanan
+
 
