@@ -276,3 +276,143 @@ Hasil modulus dari 50 dan 5 adalah 0
 ```
 
 > Catatan : Untuk operasi aritmatika ini sama seperti matematika dasar pada umumnya yaitu urutan nya berdasarkan kukabataku(kurung, kali, bagi, tambah, kurang) jadi hirarki nya kurung akan lebih di utamakan terlebih dahulu
+
+## Operasi assigment(penugasan)
+Operasi assigment(penugasan) adalah operasi di dalam pemograman yang berfungsi untuk menugaskan apa yang ada di sebalahkanan(operand) ke dalam sebelah kiri(variabel)
+
+**Berikut daftar operator assigment**
+    <table border="1" cellspacing="0" cellpadding="6" style="text-align:center; border-collapse:collapse;">
+        <thead>
+           <tr>
+             <th>Operator</th>
+            <th>Simbol</th>
+            <th>fungsi</th>
+           </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sama dengan</td>
+                <td>=</td>
+                <td>Berfungsi untuk menyimpan nilai yang kanan ke variabel sebalah kiri</td>
+            </tr>
+            <tr>
+                <td>Tambah Sama dengan</td>
+                <td>+=</td>
+                <td>Berfungsi untuk Manambahkan nilai yang kanan dengan variabel sebalah kiri</td>
+            </tr>
+            <tr>
+                <td>Kurang Sama dengan</td>
+                <td>-=</td>
+                <td>Berfungsi untuk Mengurangi nilai variabel sebalah kiri dengan nilai yang sebelah kanan</td>
+            </tr>
+            <tr>
+                <td>Bagi Sama dengan</td>
+                <td>/=</td>
+                <td>Berfungsi untuk Membagi nilai variabel sebalah kiri dengan nilai yang sebelah kanan</td>
+            </tr>
+            <tr>
+                <td>Kali Sama dengan</td>
+                <td>*=</td>
+                <td>Berfungsi untuk Mengkalikan nilai variabel sebalah kiri dengan nilai yang sebelah kanan</td>
+            </tr>
+            <tr>
+                <td>Modulus Sama dengan</td>
+                <td>%=</td>
+                <td>Berfungsi untuk sisa bagi dari nilai variabel sebalah kiri dengan nilai yang sebelah kanan</td>
+            </tr>
+        </tbody>
+    </table>
+
+### sama dengan(=)
+sama dengan(=) merupakan salah satu operator assigment dimana untuk memasukkan nilai yang ada di sebelah kanan ke dalam variabel yang ada di sebelah kiri
+
+#### Cara penggunaan
+```js
+let a = 60
+console.log(a)
+```
+
+#### Hasil
+```
+60
+```
+
+### Tambah sama dengan(+=)
+tambah sama dengan(+=) adalah salah satu operasi assigment yang berfungsi untuk menambahkan nilai dari sebalah kanan ke dalam variabel sebelah kiri
+
+#### Cara penggunaan
+```js
+let a = 60
+a+=2
+console.log(a)
+```
+
+#### Hasil
+```console
+62
+```
+
+### Kurang sama dengan(-=)
+Kurang sama dengan(-=) adalah salah satu operasi assigment yang berfungsi untuk Mengurangi nilai dari variabel sebelah kiri dengan nilai sebalah kanan
+
+#### Cara penggunaan
+```js
+let a = 60
+a-=2
+console.log(a)
+```
+
+#### Hasil
+```console
+58
+```
+
+### Bagi sama dengan(/=)
+Bagi sama dengan(/=) adalah salah satu operasi assigment yang berfungsi untuk Membagi nilai dari variabel sebelah kiri dengan nilai sebalah kanan
+
+#### Cara penggunaan
+```js
+let a = 60
+a/=2
+console.log(a)
+```
+
+#### Hasil
+```console
+30
+```
+
+### Kali sama dengan(*=)
+Kali sama dengan(*=) adalah salah satu operasi assigment yang berfungsi untuk Mengkalikan nilai dari variabel sebelah kiri dengan nilai sebalah kanan
+
+#### Cara penggunaan
+```js
+let a = 60
+a*=2
+console.log(a)
+```
+
+#### Hasil
+```console
+120
+```
+
+### Modulus sama dengan(%=)
+Modulus sama dengan(%=) adalah salah satu operasi assigment yang berfungsi untuk hasil sisa bagi  dari variabel sebelah kiri di bagi nilai sebalah kanan
+
+#### Cara penggunaan
+```js
+let a = 60
+a%=2
+console.log(a)
+```
+
+#### Hasil
+```console
+0
+```
+> Catatan : Untuk assigment ini akan memasukkan nilai akhirnya ke dalam variabel yang ada di sebelah kiri
+
+
+
+
