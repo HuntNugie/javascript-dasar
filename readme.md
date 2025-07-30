@@ -180,3 +180,99 @@ undefined
 ```
 
 > Catatan : tipe data undefined bisa sebagai penanda jika di dalamnya tidak terdapat apa apa serta tipe data undifined berbeda dengan tipe data null
+
+## Operasi Aritmatika
+operasi aritmatika adalah operasi matematika dasar yang menjumlahkan antara 2 atau lebih angka
+bisa pertambahan, pengurangan, pembagian, perkalian, dan modulus
+
+### Pertambahan(+)
+dalam javascript dan kebanyakan bahasa pemograman lainnya untuk operasi pertambahan itu menggunakan tanda plus(+) 
+
+#### Cara Penggunaan
+```js
+let a = 50
+let b = 5
+
+let c = a+b
+
+console.log("Hasil pertambahan dari "+a+" dan "+b+" adalah "+c)
+```
+
+#### Hasil
+```console
+Hasil pertambahan dari 50 dan 5 adalah 55 
+```
+
+### Pengurangan(-)
+dalam javascript dan kebanyakan bahasa pemograman lainnya untuk operasi pengurangan itu menggunakan tanda min(-)
+
+#### Cara Penggunaan
+```js
+let a = 50
+let b = 5
+
+let c = a-b
+
+console.log("Hasil pengurangan dari "+a+" dan "+b+" adalah "+c)
+```
+
+#### Hasil
+```console
+Hasil pengurangan dari 50 dan 5 adalah 45
+```
+
+### Pembagian(/)
+dalam javascript dan kebanyakan bahasa pemograman lainnya untuk operasi pembagian itu menggunakan tanda slash(/)
+
+#### Cara Penggunaan
+```js
+let a = 50
+let b = 5
+
+let c = a/b
+
+console.log("Hasil pembagian dari "+a+" dan "+b+" adalah "+c)
+```
+
+#### Hasil
+```console
+Hasil pembagian dari 50 dan 5 adalah 10
+```
+
+### Perkalian(*)
+dalam javascript dan kebanyakan bahasa pemograman lainnya untuk operasi perkalian itu menggunakan tanda bintang(*)
+
+#### Cara Penggunaan
+```js
+let a = 50
+let b = 5
+
+let c = a*b
+
+console.log("Hasil perkalian dari "+a+" dan "+b+" adalah "+c)
+```
+
+#### Hasil
+```console
+Hasil perkalian dari 50 dan 5 adalah 250
+```
+
+### Modulus(%)
+Modulus merupakan operasi aritmatika yang akan menghasilkan sisa bagi dan menggunakan tanda persen(%) untuk operasinya
+
+#### Cara Penggunaan
+```js
+let a = 50
+let b = 5
+
+let c = a%b
+
+console.log("Hasil modulus dari "+a+" dan "+b+" adalah "+c)
+```
+
+#### Hasil
+```console
+Hasil modulus dari 50 dan 5 adalah 0
+```
+
+> Catatan : Untuk operasi aritmatika ini sama seperti matematika dasar pada umumnya yaitu urutan nya berdasarkan kukabataku(kurung, kali, bagi, tambah, kurang) jadi hirarki nya kurung akan lebih di utamakan terlebih dahulu
