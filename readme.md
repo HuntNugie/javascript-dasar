@@ -684,3 +684,22 @@ console.log(!((a%2 === 0)))
 false
 ```
 
+## Operator kondisional
+operator kondisional merupakan operator yang di gunaakan untuk menghasilkan system yang dinamis sesuai kondisi, salah satu contohnya adalah operator ternary yang merupakan bentuk singkat dari if dan else
+
+### Operator ternary
+operator ternary itu termasuk ke dalam operator kondisional dimana akan mengecek kondisinya bernilai true atau belum jika true baru akan mengambil nilai yang ada di sebelah kiri dan jika false akan mengmbil nilai sebelah kanan
+
+#### Cara penggunaan
+```js
+let angka = 8
+let hasil = (angka%2 === 0) ? "genap" : "ganjil"
+console.log(hasil)
+```
+
+#### Hasil
+```
+genap
+```
+
+> Catatan : Jika mau lebih dari 1 kondisi maka anda bisa menggunakan if else, atau switch case
