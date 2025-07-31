@@ -614,3 +614,73 @@ false
 > Catatan : Operator lebih besar dari akan menghasilkan true jika nilai yang ada di sebelah kirinya lebih besar dari atau sama dengan nilai yang ada di sebelah kanan
 
 
+## Operasi logika
+operasi logika merupakan operasi yang membandingkan 1 atau 2 lebih tipe data boolean<br>
+**daftar operator logika**
+<table>
+        <thead>
+            <tr>
+                <th>operator</th>
+                <th>simbol</th>
+                <th>fungsi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>AND</td>
+                <td>&&</td>
+                <td>Akan bernilai true jika kedua sisinya true</td>
+            </tr>
+            <tr>
+                <td>OR</td>
+                <td>||</td>
+                <td>Akan bernilai true jika Minimal salah satu sisinya true</td>
+            </tr>
+            <tr>
+                <td>NOT</td>
+                <td>!</td>
+                <td>Akan menghasilkan boolean yang terbalik</td>
+            </tr>
+        </tbody>
+</table>
+
+### And(&&)
+And merupakan operator logika yang akan menghasilkan nilai boolean, dan akan menghasilkan nilai true jika kedua sisinya bernilai true
+
+#### Cara pengunaan
+```js
+console.log(10>5 && 11 < 20)
+```
+
+#### Hasil
+```
+true
+```
+
+### Or(||)
+OR merupakan operator logika yang akan menghasilkan nilai boolean, dan akan menghasilkan nilai true jika minimal salah satu dari 2 nilai tersebut adalah true
+
+#### Cara pengunaan
+```js
+console.log(10>5 || 11 > 20)
+```
+
+#### Hasil
+```
+true
+```
+
+### Not(!)
+Not merupakan operator logika yang akan membalikan nilai boolean, jika nilai tersebut true akan menjadi false, dan jika nilai terebut false akan menjadi true
+
+#### Cara pengunaan
+```js
+let a = 8
+console.log(!((a%2 === 0)))
+```
+
+#### Hasil
+```
+false
+```
+
