@@ -703,3 +703,62 @@ genap
 ```
 
 > Catatan : Jika mau lebih dari 1 kondisi maka anda bisa menggunakan if else, atau switch case
+
+## Pop up box
+pop up box atau kadang disebut juga dialog nontifikasi berfungsi sebagai nontifikasi yang ada di browser ada 3 jenis pop up
+
+<table>
+    <tr>
+        <th>pop up</th>
+        <th>fungsi</th>
+    </tr>
+    <tr>
+        <td>alert("")</td>
+        <td>berfungsi untuk menampilkan nontifikasi pemberitahuan</td>
+    </tr>
+    <tr>
+        <td>prompt("")</td>
+        <td>Berfungsi untuk memberi nontifikasi beserta inputan sehingga user dapat menginputkan sesuatu disitu</td>
+    </tr>
+    <tr>
+        <td>confirm("")</td>
+        <td>Berfungsi untuk memberi nontifikasi beserta 2 tombol yang dapat di pencet cancel dan oke</td>
+    </tr>
+</table>
+
+### alert()
+merupakan sebuah fungsi di javascript yang memunculkan nontifikasi pemberitahuan 
+
+#### Cara penggunaan
+```js
+alert("hello world")
+```
+
+#### Hasil
+![gambar](img/alert.png)
+
+### prompt()
+merupakan sebuah fungsi di javscript yang memunculkan nontifikasi beserta text inputan
+
+#### Cara penggunaan
+```js
+prompt("Masukkan nama anda ")
+```
+
+#### Hasil
+![gambar](img/prompt.png)
+
+> Catatan : Jika memencet cancel atau lanjut tanpa mengetik apapun di dalam inputan maka prompt nya akan bernilai null
+
+### Confirm
+merupakan sebuah fungsi di javascript yang memunculkan nontifikasi yang memiliki 2 pilihan tombol untuk oke atau cancel
+
+#### Cara penggunaan
+```js
+confirm("anda yakin ?")
+```
+
+#### Hasil
+![gambar](img/confirm.png)
+
+> Catatan : ini akan menghasilkan nilai boolean jika memencet oke akan mendapatkan nilai true dan jika cancel akan mendapatkan nilai false
