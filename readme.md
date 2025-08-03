@@ -795,7 +795,7 @@ while merupakan salah satu perulangan di pemograman yang menggunakan counter di 
 ```js
 let count = 1
 while(count<=5){
-    consoel.log("Hello world " + i)
+    console.log("Hello world " + i)
     count++
 }
 ```
@@ -814,7 +814,7 @@ for merupakan salah satu perulangan di pemograman yang set nilai awal dan counte
 
 #### Cara Penggunaa
 ```js
-for(let i; i<=5;i++){
+for(let i = 1; i<=5;i++){
     console.log("hello world " + i)
 }
 ```
