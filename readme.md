@@ -869,3 +869,29 @@ bilangan genap
 ```
 
 > Catatan : kondisi di dalam if bisa menggunakan sifat truhty atau falsy tidak selalu menggunakan operator pembanding untuk mendapatkan nilai true
+
+## Perkondisian else if
+perkondisian else if merupakan perkondisian if dengan banyak cabang kondisi yang dapat kita buat bisa lebih dari 2 kondisi saja, jika nilai dari if false maka akan masuk dulu ke else if baru jika tidak ada else if yang true maka akan menjalankan nilai false
+
+### Cara penggunaan
+```js
+let angka = let input = prompt("Masukkan angka : ")
+
+if(input%2==0){
+    console.log("Bilangan genap")
+}else if(input%2==1){
+    console.log("Bilangan ganjil")
+}else{
+    console.log("Yang anda masukkan bukan lah angka")
+}
+```
+
+### Hasil
+```
+// jika user menginputkan 5
+bilangan ganjil
+// jika user menginputkan "Nugie"
+yang anda masukkan bukan lah angka
+```
+
+> Catatan : memang terlihat memudahkan dengan if else if tetapi alangkah lebih baik nya jangan terlalu banyak menggunakan if else if karna akan sulit untuk di maintenence jika sudah masuk ke tahap pengembangan 
