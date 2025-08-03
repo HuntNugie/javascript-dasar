@@ -762,3 +762,90 @@ confirm("anda yakin ?")
 ![gambar](img/confirm.png)
 
 > Catatan : ini akan menghasilkan nilai boolean jika memencet oke akan mendapatkan nilai true dan jika cancel akan mendapatkan nilai false
+
+## Pengulangan(Looping)
+Pengulangan(looping) merupakan sebuah baris program yang berfungsi untuk mengulang baris kode yang ada di dalamnya sesuai dengna kondisi tertentu<br>
+**Daftar syntax perulangan**
+<table>
+    <tr>
+        <th>nama</th>
+        <th>Syntax</th>
+    </tr>
+    <tr>
+        <td>while</td>
+        <td>while(kondisi){
+         aksi
+         counter   
+        }</td>
+    </tr>
+    <tr>
+        <td>For</td>
+        <td>for(nilaiAwal;kondisi;increment/decrement){}</td>
+    </tr>
+    <tr>
+        <td>Do while</td>
+        <td>do{aksi counter}while(kondisi)</td>
+    </tr>
+</table>
+
+### While
+while merupakan salah satu perulangan di pemograman yang menggunakan counter di dalam aksi nya
+
+#### Cara penggunaan
+```js
+let count = 1
+while(count<=5){
+    consoel.log("Hello world " + i)
+    count++
+}
+```
+
+#### Hasil
+```
+hello world 1
+hello world 2
+hello world 3
+hello world 4
+hello world 5
+```
+
+### For
+for merupakan salah satu perulangan di pemograman yang set nilai awal dan counter nya dalam 1 baris kode
+
+#### Cara Penggunaa
+```js
+for(let i; i<=5;i++){
+    console.log("hello world " + i)
+}
+```
+
+#### Hasil
+```
+hello world 1
+hello world 2
+hello world 3
+hello world 4
+hello world 5
+```
+
+### do while
+do while merupakan salah satu perulangan di pemograman yang akan menjalankan minimal 1 kali blok kode nya baru akan melakukan perulangan while
+
+#### Cara penggunaan
+```js
+let angka = 1
+do{
+    console.log("Hello world "+angka)
+    angka++
+}while(angka<=5)
+```
+#### Hasil
+```
+hello world 1
+hello world 2
+hello world 3
+hello world 4
+hello world 5
+```
+
+> Catatan : Hati hati dalam menggunakan perulangan karna jika kondisi nya true terus terusan akan memasuki ke dalam infinity loop(Perulangan tanpa batas)
