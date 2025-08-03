@@ -684,7 +684,7 @@ console.log(!((a%2 === 0)))
 false
 ```
 
-## Operator kondisional
+## Operator kondisional(ternary)
 operator kondisional merupakan operator yang di gunaakan untuk menghasilkan system yang dinamis sesuai kondisi, salah satu contohnya adalah operator ternary yang merupakan bentuk singkat dari if dan else
 
 ### Operator ternary
@@ -849,3 +849,23 @@ hello world 5
 ```
 
 > Catatan : Hati hati dalam menggunakan perulangan karna jika kondisi nya true terus terusan akan memasuki ke dalam infinity loop(Perulangan tanpa batas)
+
+## Perkondisian if else
+perkondisian if else merupakan sebuah control flow(alur program) dimana kita dapat menjalankan kode sesuai kondisi dari if nya, jika kondisi di dalam if nya true maka kode yang ada di block if akan di jalankan dan jika kondisi di dalam if nya false maka akan menjalankan else nya
+
+### Cara penggunaan 
+```js
+let angka = 2
+if(angka%2 === 0){
+    console.log("bilangan genap")
+}else{
+    console.log("bilangan ganjil")
+}
+```
+
+### Hasil
+```
+bilangan genap
+```
+
+> Catatan : kondisi di dalam if bisa menggunakan sifat truhty atau falsy tidak selalu menggunakan operator pembanding untuk mendapatkan nilai true
