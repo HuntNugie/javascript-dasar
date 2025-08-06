@@ -895,3 +895,56 @@ yang anda masukkan bukan lah angka
 ```
 
 > Catatan : memang terlihat memudahkan dengan if else if tetapi alangkah lebih baik nya jangan terlalu banyak menggunakan if else if karna akan sulit untuk di maintenence jika sudah masuk ke tahap pengembangan 
+
+## Perkondisian switch case
+switch case merupakan sebuah perkondisian dimana kita tidak memasukkan kondisi untuk parameter nya tetapi memasukkan expressi(code yang menghasilkan nilai) sehingga switch case akan membandingkan nya apakah sama dengan(===) nilai case nya dan akan di bandingkan nilai dan tipe data nya
+
+### Cara penggunaan 
+```js
+// belajar switch case di javascript
+alert("Selamat anda memasuki mistery gift : ")
+// menggunakan parseInt untuk konversi nilai dari prompt nya yang asalnya string menjadi integer
+let angka = parseInt(prompt("Masukan angka 1-10 : "))
+switch(angka){
+    case 1 : 
+        console.log("Selamat anda mendapatkan sebuah hp samsung s25 ultra")
+    break;
+    case 2 : 
+        console.log("Selamat anda mendapatkan sebuah mechanical keyboard")
+    break;
+    case 3 :
+        console.log("Selamat anda mendapatkan sebuah mouse wireless logitech")
+    break;
+    case 4 :
+        console.log("Selamat anda mendapatkan sebuah laptop hp zbook 17 G5")
+    break;
+    case 5 :
+        console.log("Anda zoonk tidak mendapatkan apapun ")
+    break;
+    case 6 :
+        console.log("Selamat anda mendapatkan uang 100 Ribu rupiah")
+    break;
+    case 7 :
+        console.log("anda zoonk tidak mendapatkan apapun ")
+    break;
+    case 8 :
+        console.log("Selamat anda memenangkan lotre 1 miliar rupiah")
+    break;
+    case 9 :
+        console.log("Anda zoonk tidak mendapatkan apapun")
+    break;
+    case 10 :
+        console.log("Selamat anda mendapatkan cewe yang anda cintai")
+    break;
+    default :
+        console.log("Anda tidak memasukkan angka yang sudah di tetapkan")
+    break;
+}
+```
+### Hasil
+```
+    jika user memasukkan 10
+    Selamat anda mendapatkan cewe yang anda cintai
+```
+
+> Catatan : Untuk switch case tidak bisa menggunakan kondisi sehingga yang di masukkan adalah sebuah nilai yang dapat di bandingkan dengan nilai yang ada di case, oleh karna itu switch case cocok jika kita menggunakan program yang sudah pasti nilai nya
