@@ -948,3 +948,5 @@ switch(angka){
 ```
 
 > Catatan : Untuk switch case tidak bisa menggunakan kondisi sehingga yang di masukkan adalah sebuah nilai yang dapat di bandingkan dengan nilai yang ada di case, oleh karna itu switch case cocok jika kita menggunakan program yang sudah pasti nilai nya
+
+**BARU SAMPAI SINI TANGGAL 11 LANJUT**
