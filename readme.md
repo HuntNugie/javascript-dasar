@@ -948,3 +948,57 @@ switch(angka){
 ```
 
 > Catatan : Untuk switch case tidak bisa menggunakan kondisi sehingga yang di masukkan adalah sebuah nilai yang dapat di bandingkan dengan nilai yang ada di case, oleh karna itu switch case cocok jika kita menggunakan program yang sudah pasti nilai nya
+
+## Function(fungsi)
+function atau bisa di sebut juga dengan fungsi merupakan sebuah sub program, sub program yang dapat di panggil ulang untuk menghindari konsep DRY(Don't Repeat yourself) dimana kita cukup mengetik 1 program dan bisa di gunakan kembali tanpa perlu membuat program yang sama dua kali
+<br>
+**Function mempunyai 2 jenis dalam penulisan nya**
+- Deklarasi function
+- function expression
+
+### Bagian bagian function
+function dapat memiliki beberapa bagian yaitu ada 
+- keyword -> function
+- nama function -> hello
+- parameter/arguments -> (a,b)
+- nilai kembali -> return
+
+### Perbedaan antara deklarasi function dan expression function
+- deklarasi function mempunyai hoisting (proses dimana javascript mendaftarkan dan menjalankan baris kode) beserta isinya jadi tidak akan error kalau di eksekusi sebelum function itu di buat
+- expressi function di hoisting tidak dengan isinya sehingga akan menghasilkan error jika di panggil sebelum function tersebut di buat
+- perbedaan cara pembuatan antara deklarasi function dan expression function
+
+### Deklarasi function
+Deklarasi function merupakan function standar yang klasik di buat
+
+#### Cara penggunaan
+```js
+function hello(){
+    return "hello world"
+}
+console.log(hello())
+```
+
+#### Hasil console
+```
+hello world
+```
+
+### Expressi function
+Expressi function merupakan function yang di simpan dalam variabel seperti var,let,dan const
+
+#### Cara penggunaan
+```js
+let hello = function(){
+    return "hello world"
+}
+console.log(hello())
+```
+
+#### Hasil console
+```
+hello world
+```
+
+> Catatan : untuk menjalankan function wajib memanggil namanya beserta kurung nya jika ada parameter yang wajib di isi maka harus di isi
+
