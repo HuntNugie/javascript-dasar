@@ -1002,3 +1002,37 @@ hello world
 
 > Catatan : untuk menjalankan function wajib memanggil namanya beserta kurung nya jika ada parameter yang wajib di isi maka harus di isi
 
+### Parameter dan arguments
+Parameter dalam function berfungsi untuk tempat untuk menampung nilai dari arguments mirip dengan variabel
+<br>
+Arguments merupakan nilai yang di kirim ke dalam parameter lewat pemanggilan function
+
+#### Contoh parameter
+```js
+function tambah(a,b){ // yang ada di dalam kurung disini merupakan parameter
+return a+b
+}
+```
+
+#### Contoh arguments
+```js
+tambah(10,20) // yang ada di dalam kurung disini merupakan arguments
+```
+
+**Beberapa ketentuan**
+- Jika lebih banyak arguments di bandingkan parameter -> maka nilai arguments yang lebih tersebut akan di biarkan
+- Jika lebih banyak parameter di bandingkan arguments nya -> maka parameter yang tidak di isi nilai arguments tersebut akan di beri nilai default undifined
+
+#### Variable bawaan function
+di dalam function terdapat bawaan variabel array-like-object yang menampung nilai dari arguments yang di kirim dari pemanggilan function keyword nya adalah **arguments**
+
+##### Cara penggunaan
+```js
+function kali(a,b,c){
+    return arguments
+}
+console.log(kali(5,6))
+```
+
+##### Hasil
+![arguments](img/arguments.png)
