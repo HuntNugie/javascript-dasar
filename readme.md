@@ -1036,3 +1036,31 @@ console.log(kali(5,6))
 
 ##### Hasil
 ![arguments](img/arguments.png)
+
+
+## Scope
+scope merupakan ruanglingkup program berjalan di tandai dengan blok({}) untuk melihat scope
+di luar blok tersebut merupakan global scope, di dalam javascript itu menganut function scope jadi terpisahkan hanya jika dengan function sisanya tidak akan
+
+### Variable scope
+variable scope merupakan ruang lingkup dimana variable tersebut hidup dan di panggil
+
+#### Cara penggunaan
+```js
+// variabel scope
+// di javascript menganut function scope
+// scope merupakan sebuah istilah untuk ruang lingkup dari suatu program dalam hal ini variabel
+let a = 1 // ini adalah variable global
+function tes(){
+    let a = 10 // ini adalah variable lokal khusus untuk function ini saja
+}
+tes() 
+console.log(a) // ini akan menghasilkan nilai 1
+```
+
+#### Hasil 
+```
+1
+```
+
+>Jika ingin bahwa varible tersebut hanya hidup di ruang lingkup function nya saja pastikan bahwa harus selalu menggunakan let di dalam function, karna jika tidak maka akan menimpa variable sebelumnya jika nama nya sama dan jika tidak ada nama yang sama javascript akan otomatis membuat kan var untuk variabel nya 
