@@ -1086,4 +1086,46 @@ rekursif(3)
 0
 ```
 
->Catatan : Jangan lupa untuk membuat kondisi nya behenti karna jika tidak akan masuk ke infinity loop dan akan muncul error jika sudah maksimal pemanggilan function
+> Catatan : Jangan lupa untuk membuat kondisi nya behenti karna jika tidak akan masuk ke infinity loop dan akan muncul error jika sudah maksimal pemanggilan function
+
+## Array
+Array di javascript merupakan sebuah object yang dapat menampung banyak nilai yane berbeda dalam 1 variable dimana di dalam nya berisi key and value(index dan nilai)
+
+### Cara membuat array
+```js
+let mahasiswa = ["Nugie kurniawan","Raka sagraha","Rizal dadang hidayatulloh","aupya urfi nailil"]
+```
+
+### Cara mendapatkan 1 nilai data array
+```js
+// cara menampilkan satu data array 
+console.log(mahasiswa[0])
+```
+
+#### Hasil di console
+```
+Nugie kurniawan
+```
+
+### Cara mendapatkan seluruh data array
+```js
+// menampilkan seluruh data dengan pengulangan
+for(let i = 0;i<mahasiswa.length;i++){
+    console.log(mahasiswa[i])
+}
+```
+#### Hasil di console
+![array](img/array.png)
+
+### Cara mendapatkan panjang dari array
+```js
+// mendapatkan panjang array
+console.log(mahasiswa.length)
+```
+
+#### Hasil di console
+```
+4
+```
+
+> Catatan : Array mempunyai index yang dimulai dari 0 bukan 1
