@@ -1064,3 +1064,26 @@ console.log(a) // ini akan menghasilkan nilai 1
 ```
 
 >Jika ingin bahwa varible tersebut hanya hidup di ruang lingkup function nya saja pastikan bahwa harus selalu menggunakan let di dalam function, karna jika tidak maka akan menimpa variable sebelumnya jika nama nya sama dan jika tidak ada nama yang sama javascript akan otomatis membuat kan var untuk variabel nya 
+
+## Rekursif
+Rekursif merupakan sebuah function yang memanggil function di dalamnya dan terjadi looping 
+
+### Cara penggunaan
+```js
+function rekursif(n){
+    console.log(n)
+    if(n===0)return; //base case tempat rekursif untuk berhenti
+    return rekursif(n-1)
+}
+rekursif(3)
+```
+
+### Hasil
+```
+3
+2
+1
+0
+```
+
+>Catatan : Jangan lupa untuk membuat kondisi nya behenti karna jika tidak akan masuk ke infinity loop dan akan muncul error jika sudah maksimal pemanggilan function
