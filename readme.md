@@ -1096,6 +1096,93 @@ Array di javascript merupakan sebuah object yang dapat menampung banyak nilai ya
 let mahasiswa = ["Nugie kurniawan","Raka sagraha","Rizal dadang hidayatulloh","aupya urfi nailil"]
 ```
 
+### Cara menambahkan array secara manual
+```js
+mahasiswa[4] = "Jaenal"
+```
+
+### Method method di dalam array
+array di javascript merupakan sebuah object sehingga di dalamnya terdapat method method bawaan dari javascript
+<br>
+
+**Beberapa method array**
+- join = berfungsi untuk menampilkan dan menyambungkan seluruh element array menjadi satu string
+- push = berfungsi untuk menambahkan data ke element terakhir array
+- pop = berfungsi untuk menghapus data di element terakhir array
+- unshift = berfungsi untuk menambahkan data ke element pertama array
+- shift = berfungsi untuk menghapuskan data di element pertama array
+
+#### Join
+join berfungsi untuk menampilkan dan menyambungkan seluruh element array menjadi satu string
+
+##### Cara penggunaan
+```js
+let mahasiswa = ["Nugie kurniawan","Raka sagraha","Rizal dadang hidayatulloh","aupya urfi nailil"]
+console.log(mahasiswa.join()) //parameter nya dapat di isi atau tidak secara default akan di pisahkan dengan koma
+```
+
+##### Hasil
+```
+Nugie kurniawan,Raka sagraha,Rizal dadang hidayatulloh,aupya urfi nailil
+```
+#### Push
+push berfungsi untuk menambahkan data di element terakhir array
+
+##### Cara penggunaan
+```js
+let mahasiswa = ["Nugie kurniawan","Raka sagraha","Rizal dadang hidayatulloh","aupya urfi nailil"]
+mahasiswa.push("Nadin")
+console.log(mahasiswa.join()) //parameter nya dapat di isi atau tidak secara default akan di pisahkan dengan koma
+```
+
+##### Hasil
+```
+Nugie kurniawan,Raka sagraha,Rizal dadang hidayatulloh,aupya urfi nailil,Nadin
+```
+#### Pop
+pop berfungsi untuk menghapus data di element terakhir array
+
+##### Cara penggunaan
+```js
+let mahasiswa = ["Nugie kurniawan","Raka sagraha","Rizal dadang hidayatulloh","aupya urfi nailil"]
+mahasiswa.pop()
+console.log(mahasiswa.join()) //parameter nya dapat di isi atau tidak secara default akan di pisahkan dengan koma
+```
+
+##### Hasil
+```
+Nugie kurniawan,Raka sagraha,Rizal dadang hidayatulloh
+```
+#### unshift
+unshift berfungsi untuk menambahkan data di element pertama array
+
+##### Cara penggunaan
+```js
+let mahasiswa = ["Nugie kurniawan","Raka sagraha","Rizal dadang hidayatulloh","aupya urfi nailil"]
+mahasiswa.unshift("nadin")
+console.log(mahasiswa.join()) //parameter nya dapat di isi atau tidak secara default akan di pisahkan dengan koma
+```
+
+##### Hasil
+```
+nadin,Nugie kurniawan,Raka sagraha,Rizal dadang hidayatulloh
+```
+#### shift
+unshift berfungsi untuk menghapus data di element pertama array
+
+##### Cara penggunaan
+```js
+let mahasiswa = ["Nugie kurniawan","Raka sagraha","Rizal dadang hidayatulloh","aupya urfi nailil"]
+mahasiswa.shift()
+console.log(mahasiswa.join()) //parameter nya dapat di isi atau tidak secara default akan di pisahkan dengan koma
+```
+
+##### Hasil
+```
+Raka sagraha,Rizal dadang hidayatulloh
+```
+
+
 ### Cara mendapatkan 1 nilai data array
 ```js
 // cara menampilkan satu data array 
