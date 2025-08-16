@@ -1181,6 +1181,53 @@ console.log(mahasiswa.join()) //parameter nya dapat di isi atau tidak secara def
 ```
 Raka sagraha,Rizal dadang hidayatulloh
 ```
+#### splice
+splice berfungsi untuk menambahkan/menghapus/mengganti element array yang di pilih sehingga array nya akan termanipulasi
+<br>
+
+**Rumus**
+```js
+array.splice(index awal,mau berapa yang di hapus, data baru nya)
+```
+
+##### Beberapa kondisi 
+- jika kita tidak mau ada yang di hapus alias 0, maka akan menyisipkan data baru nya sebelum index awal nya
+- jika kita ada yang di hapus, maka data baru tersebut akan mulai menggantikan dimulai dari index awal yang di pilih 
+
+##### Cara penggunaan
+```js
+let mahasiswa = ["Nugie kurniawan","Raka sagraha","Rizal dadang hidayatulloh","aupya urfi nailil"]
+mahasiswa.splice(1,2,"alexander")
+console.log(mahasiswa.join()) //parameter nya dapat di isi atau tidak secara default akan di pisahkan dengan koma
+```
+
+##### Hasil
+```
+Nugie kurniawan,alexander,aupya urfi nailil
+```
+#### slice
+splice berfungsi untuk menyalin element array yang sudah ada dan akan menghasilkan array baru yang isinya itu di ambil dari index yang di pilih 
+<br>
+
+**Rumus**
+```js
+let arrayBaru = array.slice(index awal,index akhir)
+```
+
+##### Beberapa kondisi 
+- element array yang di ambil adalah element dari index awal dan element sebelum index terakhir karna index terakhir yang di set tidak akan di ambil menjadi array baru
+
+##### Cara penggunaan
+```js
+let mahasiswa = ["Nugie kurniawan","Raka sagraha","Rizal dadang hidayatulloh","aupya urfi nailil"]
+let arrayBaru = mahasiswa.slice(1,3) //slice akan menghasilkan array baru
+console.log(arrayBaru.join()) //parameter nya dapat di isi atau tidak secara default akan di pisahkan dengan koma
+```
+
+##### Hasil
+```
+Raka sagraha, Rizal dadang hidayatulloh
+```
 
 
 ### Cara mendapatkan 1 nilai data array
