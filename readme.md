@@ -1228,7 +1228,85 @@ console.log(arrayBaru.join()) //parameter nya dapat di isi atau tidak secara def
 ```
 Raka sagraha, Rizal dadang hidayatulloh
 ```
+#### forEach
+forEach berfungsi untuk menjalankan apapun yang di lakukan kepada array, dan forEach akan selalu mengembalikan undifined dan tidak mengembalikan array baru jadi hanya murni menjalankan apapun yang ada di dalam callback function nya 
+<br>
 
+**Rumus**
+```js
+array.foreach(callback function(element,index,array asli))
+```
+
+##### Beberapa kondisi 
+- foreach bekerja di atas array asli jadi dapat mengubah isi dari array asli nya kecuali kita hanya memanipulasi nilai nya saja tanpa melibatkan array aslinya maka tidak akan berpengaruh kepada array asli nya 
+
+##### Cara penggunaan
+```js
+let mahasiswa = ["Nugie kurniawan","Raka sagraha"]
+mahasiswa.foreach(function(e){
+    console.log(e)
+})
+```
+
+##### Hasil
+```
+Nugie kurniawan
+Raka sagraha
+```
+#### forEach
+map berfungsi untuk membuat array baru dari array aslinya dan wajib menggunakan return untuk mengembalikan element dari array nya serta best practice nya di simpan ke dalam variabel untuk menampung nilai dari array baru nya serta kita bisa memanipulasi atau mengubah isi array baru nya bebas di dalam callback function nya
+<br>
+
+**Rumus**
+```js
+let variabel = array.map(callback function(element,index,array))
+```
+
+##### Beberapa kondisi 
+- jika kita tidak menggunakan return maka isi dari array baru nya akan menghasilkan undifined
+- jika kita tidak menggunakan variable penampung maka array baru nya akan terbuang percuma
+
+##### Cara penggunaan
+```js
+let angka = [1,2,3]
+let baru = angka.map(function(e){
+    return e*2
+})
+console.log(baru.join())
+```
+
+##### Hasil
+```
+2,4,6
+```
+
+#### sort
+sort berfungsi untuk mengsortir/mengurutkan element pada array, sort tidak akan menghasilkan array baru jadi akan langsung mengubah urutan di array aslinya, sort juga hanya menampung 2 parameter di callback function nya parameter pertama untuk membandingkan dengan parameter kedua, secara default sort akan membandingkan element array secara ascending berdasarkan karakter huruf string jika ingin menggunakan urutan berdasarkan numerik maka harus menggunakan return 
+<br>
+
+**Rumus**
+```js
+array.sort(callback function(element pertama,element kedua))
+```
+
+##### Beberapa kondisi 
+- jika negatif (<0) akan di gunakan untuk ascending
+- jika positif (>0) akan di gunakan untuk descending
+- jika 0 tidak akan merubah posisi kemana mana
+
+##### Cara penggunaan
+```js
+let angka = [3,2,1]
+angka.sort(function(a,b){
+    return a-b // ini artinya akan di urutkan secara ascending numerik jika b-a akan di urutkan berdasarkan descending numerik
+})
+console.log(angka.join())
+```
+
+##### Hasil
+```
+1,2,3
+```
 
 ### Cara mendapatkan 1 nilai data array
 ```js
@@ -1263,3 +1341,4 @@ console.log(mahasiswa.length)
 ```
 
 > Catatan : Array mempunyai index yang dimulai dari 0 bukan 1
+

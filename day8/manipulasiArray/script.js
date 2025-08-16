@@ -58,3 +58,30 @@ console.log(mahasiswa.join())
 // slice berfungsi untuk menyalin element array yang di pilih dan di jadikan array baru sehingga slice itu akan menghasilkan array baru yang telah di pilih
 let baru = mahasiswa.slice(1,3) // ini akan menghasilkan array baru yang hanya mengambil dari element array mahasiswa dari index 1-2 karna element terakhir yang di set itu tidak akan kebawa jadi dalam kasus ini tidak akan mengambil index ke 3 hanya mengambil index ke 1 dan 2
 console.log(baru.join("-")) 
+
+// foreach
+// foreach berfungsi untuk menampilkan isi dari array(tidak menghasilkan array baru) jadi murni akan menggunakan array aslinya, dan foreach tidak bisa menggunaakn return jadi tidak akan mengembalikan nilai apapun
+// array.forEach(callback function(element,index,array asli))
+mahasiswa.forEach(function(e){
+    console.log(e)
+})
+
+// map berfungsi untuk bisa menghasilkan array baru dari array yang di gunakan serta bisa transformasi isinya, karna akan menghasilkan array baru best practice nya disimpan di variabel agar variable tersebut di isi dengan array baru serta wajib menggunaakan return agar dapat mengembalikan isi dari array nya
+angka = [1,7,5,2,3,5]
+let bru = angka.map(function(e){
+    return e * 2
+})
+bru.forEach(function(e){
+    console.log(e)
+})
+
+// sort berfungsi untuk mengsortir element array 
+// sort akan menghasilkan 3 nilai 
+// negatif akan menghasilkan nilai lebih kecil (<0)
+// positif akan menghasilkan nilai yang lebih besar (>0)
+// 0 akan menghasilkan nilai yang sama (0)
+bru.sort(function(a,b){
+    return a-b //berarti akan mengurutkan dari yang terkecil
+})
+console.log(bru.join())
+
