@@ -85,3 +85,21 @@ bru.sort(function(a,b){
 })
 console.log(bru.join())
 
+
+// filter dan find
+
+// filter berfungsi untuk mencari element array dan akan mengembalikan array baru sehingga mencari menggunakan filter itu bagus untuk mencari lebih dari satu nilai
+// filter akan selalu mengembalikan array baru
+let arrayBaru = angka.filter(function(e){
+    return e % 2 == 1
+})
+
+console.log(arrayBaru.join())
+
+// find berfungsi untuk mencari 1 saja element array dan jika yang di temukan nya banyak akan hanya menghasilkan element array yang pertama ditemukan sesuai urutan index array nya, dan find tidak akan mengembalikan array baru tetapi hanya akan mengembalikan 1 nilai yang di temukan saja
+
+let cari = arrayBaru.find(function(e){
+    return e === 3
+})
+
+console.log(cari)

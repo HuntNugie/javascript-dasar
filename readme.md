@@ -1280,7 +1280,7 @@ console.log(baru.join())
 2,4,6
 ```
 
-#### sort
+#### Sort
 sort berfungsi untuk mengsortir/mengurutkan element pada array, sort tidak akan menghasilkan array baru jadi akan langsung mengubah urutan di array aslinya, sort juga hanya menampung 2 parameter di callback function nya parameter pertama untuk membandingkan dengan parameter kedua, secara default sort akan membandingkan element array secara ascending berdasarkan karakter huruf string jika ingin menggunakan urutan berdasarkan numerik maka harus menggunakan return 
 <br>
 
@@ -1306,6 +1306,51 @@ console.log(angka.join())
 ##### Hasil
 ```
 1,2,3
+```
+
+#### Filter
+Filter merupakan method di array yang berfungsi untuk mencari element array dengan kondisi tertentu dan filter akan mengembalikan array baru sehingga akan lebih cocok untuk di gunakan mencari banyak element sekaligus
+<br>
+
+**Rumus**
+```js
+let variable = array.filter(element,index,array)
+```
+
+##### Cara penggunaan
+```js
+let angka = [3,2,1]
+let cari = angka.filter(function(e){
+    return e < 3
+})
+console.log(cari.join())
+```
+
+##### Hasil
+```
+2,1
+```
+#### Find
+find merupakan method di array yang berfungsi untuk mencari element array dengan kondisi tertentu dan find tidak akan mengembalikan array baru dan hanya menghasilkan element array yang di cari saja sesuai kondisi callback function, find hanya mengembalikan 1 nilai saja sehingga jika ada lebih hasil yang di dapatkan sesuai kondisi pencarian nya maka find akan mengambil element array yang pertama kali di temukan berdasarkan urutan index nya
+<br>
+
+**Rumus**
+```js
+let variable = array.find(element,index,array)
+```
+
+##### Cara penggunaan
+```js
+let angka = [3,2,1]
+let cari = angka.filter(function(e){
+    return e == 3
+})
+console.log(cari)
+```
+
+##### Hasil
+```
+3
 ```
 
 ### Cara mendapatkan 1 nilai data array
