@@ -71,3 +71,23 @@ function tambahPenumpang(nama,array){
     }
     
 }
+
+// function turun penumpang
+let turunPenumpang = function(nama,array){
+    // cek jika kosong maka kasih tau bahwa angkot kosong
+    if(array.length == 0){
+        console.log("angkot masih kosong")
+
+    }else{
+        // jika angkot tidak kosong
+        // cek jika penumpang ada atau tidak di dalam angkot
+        let index = array.findIndex((e) => e==nama)
+        if(array.includes(nama)){
+            array[index] = undefined
+        }else{
+            console.log(`penumpang dengan nama ${nama} tidak ada dalam angkot`)
+        }
+    }
+    return array
+    
+}
