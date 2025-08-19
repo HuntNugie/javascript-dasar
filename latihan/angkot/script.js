@@ -51,12 +51,11 @@ function tambahPenumpang(nama,array){
         array.unshift(nama)
         return array
     }else if(array.includes(undefined) || array.includes(nama)){
-        let tolak = false;
+        let tolak = array.find((e) => (e == nama) ? true : false)
         array.forEach((e,i,arr) =>{
             // cek jika ada nilai yang sama maka tolak
             if(e == nama){
                 console.log(`nama ${nama} telah berada di angkot`)
-                tolak = true;
             }
             // cek jika ada nilai undefined maka di isi terlebih dahulu
             if(e == undefined && !tolak){
