@@ -1387,3 +1387,52 @@ console.log(mahasiswa.length)
 
 > Catatan : Array mempunyai index yang dimulai dari 0 bukan 1
 
+## Object
+Object merupakan struktur data yang berupa pasangan key dan value, mirip seperti array hanya saja key nya dapat di custom oleh diri sendiri
+
+### Anatomi di object
+- variable di dalam object -> properti
+- function di dalam object -> method
+
+### Cara penggunaan
+```js
+let mhs = {
+    nama:"Nugie kurniawan",
+    kelas : "A2024",
+    prodi : "Teknik informatika D3",
+    semester : 3,
+    ips : [3.67,4.0],
+    alamat : {
+        rumah : "Perumahan bumi sangkuriang 4 block C3",
+        kec : "tanjungsari",
+        kab : "kab sumedang",
+        provinsi : "jawa barat"
+    },
+    ipkAkumulatif : function(){
+        let hasil = 0
+        this.ips.forEach((e) => {
+            hasil += e
+        })
+        return hasil / this.ips.length
+    }
+}
+
+console.log(mhs.nama)
+```
+### Cara memanggil/mendapatkan isi dari object
+```js
+object.Nama_properti // untuk mendapatkan properti
+object.method() // untuk mendapatkan method beserta langsung di jalankan
+object.array[index] // untuk mendapatkan nilai array dalam object
+// contoh
+mhs.nama
+mhs.ipkAkumulatif()
+mhs.ips[1]
+```
+
+### Hasil
+```
+Nugie kurniawan
+```
+> Catatan : walaupun mirip dengan array object berbeda, object dapat custom key nya, serta inisialisasi function di dalam object nya langsung 
+
